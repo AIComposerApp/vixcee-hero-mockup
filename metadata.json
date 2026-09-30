@@ -1,0 +1,6 @@
+{
+  "name": "Vixcee Hero Mockup",
+  "description": "Pixel-perfect recreation of the Vixcee hero section mockup with slide and fade entrance animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
