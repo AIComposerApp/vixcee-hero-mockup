@@ -31,54 +31,46 @@ export default function App() {
         initial={{ opacity: 0, y: -36 }}
         animate={{ opacity: 1, y: 0 }}
         transition={headerTransition}
-        className="w-full px-6 sm:px-12 md:px-16 lg:px-20 pt-7 sm:pt-9 flex items-center justify-between z-20"
+        className="w-full px-6 sm:px-12 md:px-16 lg:px-20 pt-7 sm:pt-9 relative z-20"
       >
-        {/* Left: Nav skeleton items */}
-        <div className="flex items-center gap-2.5 sm:gap-3.5">
-          <div className="w-9 sm:w-11 md:w-12 h-2.5 sm:h-3 rounded-full bg-[#8c929f]" />
-          <div className="w-18 sm:w-22 md:w-26 h-2.5 sm:h-3 rounded-full bg-[#505562]" />
-          <div className="flex items-center gap-1.5">
-            <div className="w-8 sm:w-10 md:w-11 h-2.5 sm:h-3 rounded-full bg-[#505562]" />
-            <svg
-              width="9"
-              height="6"
-              viewBox="0 0 9 6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-[#505562] shrink-0"
-            >
-              <path
-                d="M1 1.2L4.5 4.7L8 1.2"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+        <div className="w-full relative flex items-center justify-between">
+          {/* Left: Nav skeleton items */}
+          <div className="flex items-center gap-2.5 sm:gap-3.5">
+            <div className="w-9 sm:w-11 md:w-12 h-2.5 sm:h-3 rounded-full bg-[#8c929f]" />
+            <div className="w-18 sm:w-22 md:w-26 h-2.5 sm:h-3 rounded-full bg-[#505562]" />
+            <div className="flex items-center gap-1.5">
+              <div className="w-8 sm:w-10 md:w-11 h-2.5 sm:h-3 rounded-full bg-[#505562]" />
+              <svg
+                width="9"
+                height="6"
+                viewBox="0 0 9 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-[#505562] shrink-0"
+              >
+                <path
+                  d="M1 1.2L4.5 4.7L8 1.2"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
           </div>
-        </div>
 
-        {/* Center: Vixcee SVG Logo */}
-        <div className="flex items-center justify-center">
-          <svg
-            width="36"
-            height="27"
-            viewBox="94.88 105.94 211.62 156.15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-[#d8dce6]"
-            aria-label="Vixcee Logo"
-          >
-            <path
-              d="M 248.22,193.18 C 268.71,162.59 288.78,130.59 307.94,106.25 H 263.27 C 251.59,106.25 239.39,115.32 233.59,125.71 L 218.25,150.71 L 201.61,123.33 C 199.76,120.1 196.22,118.08 192.74,118.14 L 154.71,118.53 C 156.49,120.12 158.19,121.57 159.64,123.65 C 173.22,143.69 186.21,165.87 198.51,185.19 L 218.25,151.53 L 244.47,194.33 L 222.05,227.06 L 198.82,186.44 C 192.78,197.31 186.07,208.14 179.46,217.19 C 179.34,217.27 179.23,217.22 179.22,217.08 C 182.09,209.63 186.47,202.3 189.14,195.32 L 150.5,128.09 C 147.56,122.54 140.84,118.25 135.49,118.25 H 93.54 L 172.06,247.81 C 181.15,261.85 196.15,261.2 206.59,248.19 L 222.08,228.06 L 237.32,255.52 C 239.39,259.31 243.25,261.65 247.17,261.65 H 291.66 L 248.22,193.18 Z"
-              fill="currentColor"
+          {/* Center: Perfectly Centralized Logo Placeholder Container */}
+          <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center">
+            <div
+              className="w-14 sm:w-16 h-6 sm:h-7 rounded-lg bg-[#cbcfd8]"
+              aria-label="Logo placeholder"
             />
-          </svg>
-        </div>
+          </div>
 
-        {/* Right: Rounded Rect Button Skeleton */}
-        <div className="w-18 sm:w-22 md:w-[92px] h-7 sm:h-8.5 rounded-lg border border-[#333744] bg-[#1e2027]/70 flex items-center justify-center px-2.5">
-          <div className="w-10 sm:w-12 md:w-13 h-2.5 sm:h-3 rounded-full bg-[#bcc1cc]" />
+          {/* Right: Rounded Rect Button Skeleton */}
+          <div className="w-18 sm:w-22 md:w-[92px] h-7 sm:h-8.5 rounded-lg border border-[#333744] bg-[#1e2027]/70 flex items-center justify-center px-2.5">
+            <div className="w-10 sm:w-12 md:w-13 h-2.5 sm:h-3 rounded-full bg-[#bcc1cc]" />
+          </div>
         </div>
       </motion.header>
 
